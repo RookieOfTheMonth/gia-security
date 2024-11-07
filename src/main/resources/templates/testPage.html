@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/test" method="post">
+    <label>
+        Name:
+        <input type="text" name="name" th:value="${testVO.name}"/>
+    </label>
+    <label>
+        date:
+        <input type="date" name="date" th:value="${{testVO.date}}"/>
+    </label>
+    <button type="submit">Search</button>
+</form>
+</body>
+</html>
